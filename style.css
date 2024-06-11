@@ -1,0 +1,64 @@
+/*#region CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*#endregion*/
+
+body {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  font-family: arial, sans-serif;
+  font-size: 0.37cm;
+}
+
+/*#region Printing*/
+.page {
+  background: var(--page-bg-color);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+}
+
+.page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+@page {
+  size: 21cm 29.7cm;
+  padding: 0;
+  margin: 0mm;
+  border: none;
+  border-collapse: collapse;
+}
+/*#endregion*/
