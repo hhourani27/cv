@@ -33,12 +33,34 @@ ul {
 
 /*#endregion*/
 
+/*#region Variables*/
+:root {
+  /* Background color */
+  --bg-light: white;
+  --bg-dark: #22405c;
+
+  /* Text color */
+  --text-color-primary-light: #384347;
+  --text-color-secondary-light: #028dff;
+  --text-color-text-light: #384347;
+  --icon-color-light: #b9b9b9;
+
+  --text-color-primary-dark: white;
+  --text-color-text-dark: #e0e0e0;
+}
+/*#endregion*/
 body {
   width: 21cm;
   height: 29.7cm;
   margin: 0 auto;
+  /* TODO: Try PT Sans and other fonts*/
   font-family: arial, sans-serif;
   font-size: 0.37cm;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 0.84cm;
 }
 
 /*#region Printing*/
@@ -47,6 +69,8 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 0.5cm;
+
+  border: 1px solid black;
 }
 
 .page[size="A4"] {
@@ -61,4 +85,70 @@ body {
   border: none;
   border-collapse: collapse;
 }
+/*#endregion*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/*#region Left panel*/
+
+.left-panel {
+  background-color: var(--bg-dark);
+  color: var(--text-color-primary-dark);
+
+  padding: 1.27cm 0.63cm;
+}
+
+.left-panel .profile-pic {
+  height: 4.4cm;
+}
+/*#endregion*/
+
+/*#region Rigth panel*/
+.right-panel {
+  background-color: var(--bg-light);
+  color: var(--text-color-primary-light);
+
+  padding: 1.27cm 0.63cm;
+}
+
+.header {
+  height: 4.4cm;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1 {
+  line-height: 1;
+}
+
+.header .professional-title {
+  margin-top: 0.12cm;
+
+  color: var(--text-color-secondary-light);
+}
+
+.contact-info {
+  margin-top: 0.35cm;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.35cm;
+}
+
+.text-and-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.16cm;
+}
+
+.text-and-icon .icon {
+  color: var(--icon-color-light);
+}
+
 /*#endregion*/
