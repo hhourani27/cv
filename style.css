@@ -106,7 +106,7 @@ body {
 
   padding: 1.27cm 0.63cm;
 
-  width: 50%;
+  width: 55%;
 }
 
 .left-panel .profile-pic {
@@ -163,7 +163,7 @@ body {
   color: var(--icon-color-light);
 }
 
-main {
+.panel-content {
   display: flex;
   flex-direction: column;
   gap: 0.56cm;
@@ -206,13 +206,15 @@ section h2:after {
 .experience {
   display: flex;
   flex-direction: column;
-  gap: 0.21cm;
+  gap: 0.1cm;
 }
 
 .experience-title {
   font-family: "Rubik", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 0.42cm;
+
+  line-height: 1;
 }
 
 .experience-company-list {
@@ -321,3 +323,15 @@ section h2:after {
 }
 
 /*#endregion*/
+
+.value-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32cm;
+}
+
+.value-title {
+  font-size: 0.42cm;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+}
