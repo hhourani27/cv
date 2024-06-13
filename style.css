@@ -27,6 +27,11 @@ svg {
   max-width: 100%;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   -webkit-padding-start: 0;
@@ -234,6 +239,20 @@ section h2:after {
   padding-left: 0.42cm;
 }
 /*#endregion*/
+
+#open-source {
+  gap: 0.1cm;
+}
+
+#open-source .description > div:nth-child(1) {
+  color: var(--text-color-secondary-light);
+}
+
+#open-source .description {
+  display: flex;
+  flex-direction: row;
+  gap: 0.21cm;
+}
 
 /*#region tools*/
 .tool-list {
