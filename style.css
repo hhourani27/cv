@@ -29,7 +29,10 @@ svg {
 
 ul {
   list-style: none;
-  padding-left: 0.42cm;
+  -webkit-padding-start: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
 /*#endregion*/
@@ -189,7 +192,7 @@ section h2:after {
 /*#endregion*/
 
 /*#region experience*/
-.experiences {
+.experience-list {
   display: flex;
   flex-direction: column;
   gap: 0.56cm;
@@ -201,38 +204,34 @@ section h2:after {
   gap: 0.21cm;
 }
 
-.experience-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .experience-title {
-  flex: 0 1 auto; /* Allow it to shrink and grow */
-
   font-family: "Rubik", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 0.42cm;
 }
 
-.experience-company {
-  flex: 0 1 auto; /* Allow it to shrink and grow */
+.experience-company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56cm;
+}
 
+.experience-company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.experience-company-name {
   font-family: "Rubik", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 0.35cm;
   color: var(--text-color-secondary-light);
-
-  margin-left: 10px; /* Adjust the spacing as needed */
-}
-
-.experience-date {
-  flex: 0 1 auto; /* Allow it to shrink and grow */
-  margin-left: auto; /* Push it to the right */
 }
 
 .experience-details ul {
   list-style: disc;
+  padding-left: 0.42cm;
 }
 /*#endregion*/
 
