@@ -98,13 +98,17 @@ body {
   height: 100%;
 }
 
+.panel {
+  padding: 1.27cm 0.63cm 0.63cm 0.63cm;
+  display: flex;
+  flex-direction: column;
+}
+
 /*#region Left panel*/
 
 .left-panel {
   background-color: var(--bg-dark);
   color: var(--text-color-primary-dark);
-
-  padding: 1.27cm 0.63cm;
 
   width: 55%;
 }
@@ -118,8 +122,6 @@ body {
 .right-panel {
   background-color: var(--bg-light);
   color: var(--text-color-primary-light);
-
-  padding: 1.27cm 0.63cm;
 }
 
 .header {
@@ -167,6 +169,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.56cm;
+
+  flex: 1;
 }
 
 /*#endregion*/
@@ -361,3 +365,9 @@ section h2:after {
   color: var(--text-color-secondary-light);
 }
 /*#endregion*/
+
+.disclaimer {
+  font-size: 0.28cm;
+  text-align: justify;
+  margin-top: auto;
+}
