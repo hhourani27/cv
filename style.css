@@ -113,9 +113,20 @@ body {
   width: 55%;
 }
 
-.left-panel .profile-pic {
+.profile-pic {
   height: 4.4cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.profile-pic img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+}
+
 /*#endregion*/
 
 /*#region Rigth panel*/
