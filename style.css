@@ -232,7 +232,6 @@ section h2:after {
 .experience-company-name {
   font-family: "Rubik", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
-  font-size: 0.35cm;
   color: var(--text-color-secondary-light);
 }
 
@@ -335,3 +334,30 @@ section h2:after {
   font-weight: 400;
   /* text-transform: uppercase; */
 }
+
+.degree-first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/*#region languages*/
+.lang-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 0.35cm;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1cm;
+}
+
+.lang-strength {
+  font-size: 0.21cm;
+  color: var(--text-color-secondary-light);
+}
+/*#endregion*/
