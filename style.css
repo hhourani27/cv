@@ -260,7 +260,7 @@ section h2:after {
   gap: 0.1cm;
 }
 
-#open-source .description > div:nth-child(1) {
+#open-source .description > div:nth-child(2) {
   color: var(--text-color-secondary-light);
 }
 
