@@ -107,6 +107,8 @@ body {
 /*#region Left panel*/
 
 .left-panel {
+  padding-top: 0.63cm;
+
   background-color: var(--bg-dark);
   color: var(--text-color-primary-dark);
 
@@ -114,7 +116,7 @@ body {
 }
 
 .profile-pic {
-  height: 4.4cm;
+  height: 5.04cm;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,6 +153,7 @@ body {
 
 .header .professional-title {
   margin-top: 0.12cm;
+  font-size: 0.39cm;
 
   color: var(--text-color-secondary-light);
 }
