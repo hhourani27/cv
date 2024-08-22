@@ -1,0 +1,18 @@
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32cm;
+}
+
+.skill-category-title {
+  font-size: 0.42cm;
+  font-weight: 400;
+}
+
+.lang-name {
+  font-size: 0.35cm;
+}
+
+.panel-content {
+  gap: 0.84cm;
+}

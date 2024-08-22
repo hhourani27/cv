@@ -112,7 +112,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-color-primary-dark);
 
-  width: 55%;
+  width: 32%;
 }
 
 .profile-pic {
@@ -135,6 +135,7 @@ body {
 .right-panel {
   background-color: var(--bg-light);
   color: var(--text-color-primary-light);
+  width: 68%;
 }
 
 .header {
