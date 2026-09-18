@@ -1,0 +1,28 @@
+.benevolat {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* ensures there's always space between title and date */
+}
+
+.benevolat-desc {
+  flex: 1 1 auto; /* allows wrapping */
+}
+
+.benevolat-title {
+  font-family: "Rubik", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: var(--text-color-secondary-light);
+}
+
+.benevolat-date {
+  flex: 0 0 auto; /* no shrinking or growing, keeps its size */
+  white-space: nowrap; /* prevents wrapping */
+}
+
+.value-list {
+  gap: 0.5cm;
+}
+
+.skill-list {
+  gap: 0.5cm;
+}
